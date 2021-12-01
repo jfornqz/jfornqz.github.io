@@ -10,7 +10,7 @@
  </head>
  <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-    <a class="navbar-brand text-white" href="#">Navbar</a>
+    <!-- <a class="navbar-brand text-white" href="#">Dataset</a> -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -18,15 +18,9 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link text-white" href="#">Home</a>
+          <a class="nav-link text-white" href="./index.html">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="#">Test</a>
-        </li>
-        
-        <li class="nav-item">
-          <a class="nav-link text-white" href="#">Test</a>
-        </li>
+
       </ul>
 
     </div>
@@ -34,7 +28,7 @@
 
   <div class="container">
    <div class="table-responsive">
-    <h1 align="center">Sample Dataset</h1>
+    <h1 align="center">Supermarket Dataset</h1>
     <br />
     <!-- <div align="center">
      <button type="button" name="load_data" id="load_data" class="btn btn-info">Load Data</button>
@@ -51,7 +45,7 @@
 $(document).ready(function(){
 //  $('#load_data').click(function(){
   $.ajax({
-   url:"./dataset/supermarketSheet1.csv",
+   url:"./dataset/supermarket_sales.csv",
    dataType:"text",
    success:function(data)
    {
